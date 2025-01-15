@@ -1,0 +1,31 @@
+#include <iostream>
+#include <limits>
+using namespace std;
+
+int main() {
+    float prelims;
+    float midterms;
+    float finals;
+
+    cout <<"Enter prelims grade:" << endl;
+    cin >> prelims;
+    cout <<"Enter midterms grade:" << endl;
+    cin >> midterms;
+    cout <<"Enter finals grade:" << endl;
+    cin >> finals;
+    
+    if ((prelims > 100 || prelims < 0)||(midterms > 100 || midterms< 0)||(finals > 100 || finals < 0))
+        {
+        cout << "\n Error: That was an invalid grade. Please try again.";
+                return main();
+        }
+    
+    float prelim = prelims * 0.30;
+    float midterm = midterms * 0.30;
+    float final = finals * 0.40;
+    
+    float average = (prelim+midterm+final);
+    cout << "Average Grade: " <<average <<endl<<endl;
+
+    return main();
+}
