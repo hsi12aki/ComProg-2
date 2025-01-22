@@ -1,0 +1,9 @@
+class Main {
+    public static void main(String[] args) {
+        String a = "John";
+        int num1 = 4763059, num2 = 1957208, sum;
+        sum = num1 + num2;
+        System.out.println("Hello, " + a + " meow.");
+        System.out.println("The total sum of "+num1+" + "+num2+" is "+ sum + ".");
+    }
+}
