@@ -2,7 +2,8 @@
       
       public class Main {
           public static void main(String[] args) {
-            
+
+            //user input for the 5 number
             Scanner my1st = new Scanner(System.in);
             System.out.println("1st number");
             int first = my1st.nextInt();
@@ -23,9 +24,10 @@
             System.out.println("5th number");
             int fifth = my5th.nextInt();
             
+            //average of inputted values
             int average = ((first+second+third+fourth+fifth)/5);
     
-            
+            //based on the calculated average will output the respected stuff requested from the problem
             if(average >= 51 && average <= 100)
                       System.out.println("Output: ++ " + average);
                 else if(average == 50)
