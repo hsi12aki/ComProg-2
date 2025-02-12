@@ -1,10 +1,13 @@
-import java.util.Scanner;
+import java.util.Scanner; //input library
 
 public class GradeInput {
     public static void main(String[] args) {
-      
+
+      //user input for the grade
       Scanner myinput = new Scanner(System.in);
       int grade = myinput.nextInt();
+
+      //based on input will output the grade within the ranges
         if(grade >= 91 && grade <= 100)
                 System.out.println("A");
             else if(grade >= 81 && grade <= 90)
